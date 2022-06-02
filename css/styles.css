@@ -26,6 +26,9 @@ nav {
 .activity {
     background-color: turquoise;
 }
+.message {
+    background-color: tomato;
+}
 /* GRID POSITION */
 .container {
     display: grid;
