@@ -40,6 +40,17 @@ nav {
     display: grid;
 }
 
+header {
+    grid-area: header;
+}
+   
+nav {
+    grid-area: navigation;
+}
+   
+.main-container {
+    grid-area: main;
+}
 
 /* ---> RECISE ICONS E IMAGES  */
 
