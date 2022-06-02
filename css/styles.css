@@ -23,6 +23,9 @@ nav {
 .members {
     background-color: orange;
 }
+.activity {
+    background-color: turquoise;
+}
 /* GRID POSITION */
 .container {
     display: grid;
