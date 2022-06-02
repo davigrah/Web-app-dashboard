@@ -29,6 +29,9 @@ nav {
 .message {
     background-color: tomato;
 }
+.settings {
+    background-color: violet;
+}
 /* GRID POSITION */
 .container {
     display: grid;
