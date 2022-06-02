@@ -1,0 +1,44 @@
+/* ---> MAIN STYLES TO DEFINE GRID POSTION */
+header {
+    background-color: blue;
+}
+nav {
+    background-color: red;
+}
+.main-header {
+    background-color: green;
+}
+.traffic {
+    background-color: hotpink;
+}
+.daily {
+    background-color: khaki;
+}
+.mobile {
+    background-color: lightcoral;
+}
+.social {
+    background-color: midnightblue;
+}
+.members {
+    background-color: orange;
+}
+/* GRID POSITION */
+.container {
+    display: grid;
+}
+.main-container {
+    display: grid;
+}
+
+
+/* ---> RECISE ICONS E IMAGES  */
+
+.nav-icon,
+.bell,
+.social-image {
+    max-width: 10%;
+    
+}
+
+
