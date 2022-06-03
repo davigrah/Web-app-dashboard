@@ -27,11 +27,26 @@ header {
 }
 .profile-photo {
     height: 40px;
+    margin-left: 15px;
 }
 .student-name {
     color: white;
     text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+.bell {
+    fill: white;
+    display: flex;
+    width: 40px ;
+    border-right: 1px solid rgba(255, 255, 255, 0.652) ;
+    padding-right: 10px;
+}
+.bell-student{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* --->> NAV STYLES --->  */
 nav {
@@ -50,7 +65,13 @@ nav svg {
 /* ---> MAIN HEADER ---> */
 .main-header {
     background-color: whitesmoke;
+    height: 60px;
 }
+.main-header h2 {
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
 
 /* ---> ALERT ---> */
 .alert {
