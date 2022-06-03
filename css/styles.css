@@ -11,25 +11,69 @@
 header h1 {
     color: white;
 }
+
+/* --->> HEADER STYLES ---> */
 header {
     display: flex;
     justify-content: space-between;
     padding: 1%;
     align-items: center;
     background-color: #7773ca;
-    height: 8vh;
+    height: 60px;
+}
+.right-header{
+    display: flex;
+    
+}
+.profile-photo {
+    height: 40px;
+}
+.student-name {
+    color: white;
+    text-align: center;
 }
 
+/* --->> NAV STYLES --->  */
 nav {
     background-color: #4c4c74;
     align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
 }
+nav svg {
+    fill: white;
+    width: 35px;
+}
+ 
+/* ---> MAIN HEADER ---> */
 .main-header {
-    background-color: green;
+    background-color: whitesmoke;
 }
+
+/* ---> ALERT ---> */
+.alert {
+    background-color: #7773ca;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---> TRAFIC -->  */
+
 .traffic {
-    background-color: hotpink;
+    background-color: whitesmoke;
+    display: flex;
 }
+
+li {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+
 .daily {
     background-color: khaki;
 }
@@ -51,9 +95,7 @@ nav {
 .settings {
     background-color: violet;
 }
-.alert {
-    background-color: brown;
-}
+
 /* GRID POSITION */
 .container {
     display: grid;
@@ -73,11 +115,13 @@ nav {
 .main-container {
     grid-area: main;
 }
+.traffic-chart {
+    grid-area: traffic-chart;
+}
 
 
 /* ---> RECISE ICONS E IMAGES  */
 
-.nav-icon,
 .bell,
 .social-image {
     max-width: 35px;
@@ -97,9 +141,6 @@ nav {
       "main";
   
   }
-  
- 
-  
 
   
   @media (min-width: 768px) {
@@ -137,6 +178,7 @@ nav {
     .traffic {
         grid-area: traffic;
     }
+
 
     .main-container {
         grid-template-columns: 1fr 1fr;
