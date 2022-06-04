@@ -5,6 +5,7 @@
     box-sizing: border-box;
   }
 
+
 /* --> BASIC STYLES  */
 
 /* ---> MAIN STYLES TO DEFINE GRID POSTION */
@@ -26,7 +27,7 @@ header {
     
 }
 .profile-photo {
-    height: 40px;
+    height: 35px;
     margin-left: 15px;
 }
 .student-name {
@@ -34,6 +35,11 @@ header {
     text-align: center;
     padding-top: 10px;
     padding-left: 10px;
+    font-size: 15px;
+}
+header h1 {
+    font-size: 20px;
+    padding-left: 5px;
 }
 .bell {
     fill: white;
@@ -54,12 +60,13 @@ nav {
     align-content: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 50px;
+    padding: 15px;
 }
 nav svg {
     fill: white;
-    width: 35px;
+    width: 30px;
 }
  
 /* ---> MAIN HEADER ---> */
@@ -67,26 +74,71 @@ nav svg {
     background-color: whitesmoke;
     height: 60px;
 }
-.main-header h2 {
-  padding-left: 5px;
-  padding-top: 10px;
+.headline {
+  display: block;
+  max-width: 130px;
+  font-size: 20px;
+  padding: 16px;
+  background-color: white;
+  
+}
+div.main-header {
+    background-color: rgb(230, 229, 229);
+    height: 55px;
+    
 }
 
 
 /* ---> ALERT ---> */
+/* The alert message box */
 .alert {
+    padding: 8px;
     background-color: #7773ca;
     color: white;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 15px;
+    width: 90%;
+    border-radius: 3%;
+    margin: 20px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: lighter;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
 }
 
 /* ---> TRAFIC -->  */
 
 .traffic {
-    background-color: whitesmoke;
-    display: flex;
+    background-color: white;
+    height: 90px;
 }
+.traffic-header {
+    margin-left: 10px;
+    min-width: 100%;
+}
+.traffic-header h3{
+    max-width: 60px;
+}
+ .traffic li {
+     display: grid;
+     margin: 5px;
+ }
+ .traffic-nav-link {
+     padding: 5px 10px;
+     
+ }
+ .traffic-nav-link.active {
+     background-color: rgb(93, 182, 93);
+     border-radius: 40%;
+     color: white;
+     
+ }
 
 li {
     float: left;

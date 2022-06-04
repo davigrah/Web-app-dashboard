@@ -48,7 +48,11 @@
                 <div class="tab"></div>
             </div>
             <!-- alert banner -->
-            <div class="alert" id="alert"><b>Alert:</b> You have unread messages</div>
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                Alert: you have unread messages.
+              </div>
+            <!-- <div class="alert" id="alert"><b>Alert:</b> You have unread messages</div> -->
             <!-- JS will insert alert here -->
 
                 <!-- line graph charts -->
@@ -64,7 +68,7 @@
                 </div>
                 <div class="widget-container-full">
                     <!-- element line graph will attach to -->
-                    <canvas id="traffic-chart"></canvas>
+                    <!-- <canvas id="traffic-chart"></canvas> -->
                 </div>
             </section>
 
