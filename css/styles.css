@@ -117,6 +117,7 @@ div.main-header {
 .traffic {
     background-color: white;
     height: 90px;
+    border-bottom: solid 2px rgb(177, 173, 173);
 }
 .traffic-header {
     margin-left: 10px;
@@ -145,28 +146,62 @@ li {
     display: block;
     text-align: center;
 }
+/* ----> dayli traffic --->  */
 
+.daily,
+.mobile,
+.social,
+.members,
+.activity,
+.message,
+.settings  {
+    background-color: white;
+    border-bottom: solid 2px rgb(177, 173, 173);
+}
 
-.daily {
-    background-color: khaki;
+.daily h3,
+.mobile h3,
+.social h3,
+.members h3,
+.activity h3,
+.message h3,
+.settings h3 {
+    margin: 1em;
 }
-.mobile {
-    background-color: lightcoral;
+
+/* ----> social stats --->  */
+
+.social-container {
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 50px 10px;
+    background-color: rgb(242, 242, 242);
+    border: solid 1px rgb(177, 173, 173);
+    border-radius: 8px;
+    margin: 10px
 }
-.social {
-    background-color: midnightblue;
+ 
+
+.social p {
+    margin-left: 20px;
 }
-.members {
-    background-color: orange;
+
+.social-p {
+    font-size: small;
+    color: #7773ca;
 }
-.activity {
-    background-color: turquoise;
+.number-p {
+    font-size: xx-large;
+    color: rgb(90, 90, 90);
 }
-.message {
-    background-color: tomato;
-}
-.settings {
-    background-color: violet;
+
+.social svg {
+    min-width: 40px;
+    fill: #7773ca;
+
 }
 
 /* GRID POSITION */
