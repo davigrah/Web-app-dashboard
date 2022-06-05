@@ -203,12 +203,10 @@ li {
 
 }
 
-/* ----> NEW MEMBERS ---->  */
+/* ----> NEW MEMBERS AND ACTIVITY - ---->  */
 
 .members-image {
     max-width: 80px;
-
-    
 }
 .members-container,
 .activity-container {
@@ -221,7 +219,6 @@ li {
 
 .member-text {
     text-align: center;
-    /* margin-bottom: 15px; */
     margin: 0px 20px 20px 15px;
 }
 .members a{
@@ -393,6 +390,26 @@ nav {
         padding: 40px 30px 40px 30px;
         align-items: center;
         
+    }
+
+    .social h3 {
+        margin: 19px 19px 0px 19px;
+    }
+    /* ----> NEW MEMBERS AND ACTIVITY --->  */
+
+    .members-container,
+    .activity-container {
+        flex-direction: row;
+        margin-left: 18px;
+    }
+
+    .member-text {
+        text-align: start;
+        margin: 0px 20px 20px 15px;
+    }
+    .members a{
+        color: #7773ca;
+        text-decoration: none;
     }
    
 
