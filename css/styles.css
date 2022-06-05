@@ -354,6 +354,32 @@ nav {
         "header header"
         "navigation main";
     }
+   /* ---> NAVIGATION --->  */
+
+    .navigation {
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        justify-content: start;
+    
+    }
+    .navigation svg {
+        margin-top: 20px;
+    }
+    /* ---> TRAFFIC --->  */
+
+    .traffic-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+    }
+    .traffic {
+        margin-right: 20px;
+        height: 50px
+    }
+
+
     
     .alert {
         grid-area: alert;
