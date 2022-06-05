@@ -229,6 +229,76 @@ li {
     text-decoration: none;
 }
 
+/* ---> MESSAGE USER --->  */
+
+.widget-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.form-field {
+    width: 90%;
+    height: 45px;
+    background-color: rgb(245, 242, 242);
+    border: solid 1px rgb(158, 154, 154);
+    border-radius: 5px;
+}
+
+.form-area {
+    width: 90%;
+    height: 120px;
+    background-color: rgb(245, 242, 242);
+    border: solid 1px rgb(158, 154, 154);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#send {
+    width: 90%;
+    height: 45px;
+    background-color: #7773ca;
+    color: white;
+    border: solid 1px rgb(158, 154, 154);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* ---> SETTINGS --->  */
+
+.settings-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.form-field {
+    border: solid 1px rgb(158, 154, 154);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.button-primary {
+    padding: 15px 45px;
+    margin-right: 5px;
+    background-color: #7773ca;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.button-disabled {
+    color: white;
+    background-color: rgb(177, 175, 175);
+    padding: 15px 45px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    
+}
+
 
 /* GRID POSITION */
 .container {
