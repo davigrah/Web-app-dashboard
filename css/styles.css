@@ -379,7 +379,24 @@ nav {
         height: 50px
     }
 
+    /* ----> DAILY TRAFFIC --->  */
 
+    .daily {
+        border-right: 1px solid rgb(230, 230, 230);
+    }
+
+    /* ---> SOCIAL --->  */
+   
+
+    .social-container {
+        display: inline-flex;
+        padding: 40px 30px 40px 30px;
+        align-items: center;
+        
+    }
+   
+
+    
     
     .alert {
         grid-area: alert;
