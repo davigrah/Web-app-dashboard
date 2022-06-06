@@ -91,15 +91,21 @@ div.main-header {
 
 /* ---> ALERT ---> */
 /* The alert message box */
-.alert {
+.alert .alert-banner {
+    display: flex;
     padding: 8px;
     background-color: #7773ca;
     color: white;
     margin-bottom: 15px;
     width: 90%;
     border-radius: 3%;
-    margin: 20px;
+    margin: 20px auto;
+    justify-content: space-between;
+    font-size: smaller;
+    flex-direction: row;
 }
+
+al
 
 /* The close button */
 .closebtn {
