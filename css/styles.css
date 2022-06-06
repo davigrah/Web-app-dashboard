@@ -126,15 +126,21 @@ al
     border-bottom: solid 1px rgb(230, 230, 230);
 }
 .traffic-header {
-    margin-left: 10px;
     min-width: 100%;
 }
 .traffic-header h3{
     max-width: 60px;
+    margin-left: 18px;
 }
  .traffic li {
      display: grid;
      margin: 5px;
+ }
+ .traffic-nav {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
  }
  .traffic-nav-link {
      padding: 5px 10px;
@@ -375,12 +381,14 @@ nav {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
     
     }
     .traffic {
         margin-right: 20px;
         height: 50px
     }
+  
 
     /* ----> DAILY TRAFFIC --->  */
 
