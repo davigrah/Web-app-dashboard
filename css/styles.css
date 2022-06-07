@@ -344,6 +344,10 @@ nav {
     border-radius: 50%;
 }
 
+.bell:hover {
+    transform: scale(1.1);
+    fill: green;
+}
 .container {
     height: 100%;
     display: grid;
