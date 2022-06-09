@@ -5,6 +5,7 @@
     box-sizing: border-box;
   }
 
+  
 
 /* --> BASIC STYLES  */
 
@@ -228,7 +229,9 @@ li {
   border-bottom: solid 1px rgb(230, 230, 230);
   margin-top: 15px;
 }
-
+.date {
+    margin-top: 0px;
+}
 .member-text {
     text-align: center;
     margin: 0px 20px 20px 15px;
@@ -422,6 +425,11 @@ nav {
     .activity-container {
         flex-direction: row;
         margin-left: 18px;
+        
+    }
+    .date {
+        margin-left: auto;
+        margin-right: 15px;
     }
 
     .member-text {
@@ -517,4 +525,4 @@ nav {
 
 
 
- margin left 
+ 
