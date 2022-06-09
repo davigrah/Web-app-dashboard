@@ -230,11 +230,11 @@ li {
   margin-top: 15px;
 }
 .date {
-    margin-top: 0px;
+    margin-bottom: 20px;
 }
 .member-text {
     text-align: center;
-    margin: 0px 20px 20px 15px;
+    margin: 0px 20px 0px 20px;
 }
 .members a{
     color: #7773ca;
