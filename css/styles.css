@@ -123,8 +123,10 @@ al
 
 .traffic {
     background-color: white;
-    height: 90px;
+    height: fit-content;
     border-bottom: solid 1px rgb(230, 230, 230);
+
+
 }
 .traffic-header {
     min-width: 100%;
@@ -170,6 +172,7 @@ li {
 .settings  {
     background-color: white;
     border-bottom: solid 1px rgb(230, 230, 230);
+
 }
 
 .daily h3,
@@ -362,6 +365,14 @@ nav {
   
   }
 
+  /* ---> ADJUST CHARTS --->  */
+  
+  #mobile-chart,
+  #traffic-chart,
+  #daily-chart {
+      margin-bottom: 18px;
+  }
+
   
   @media (min-width: 768px) {
     .container {
@@ -391,9 +402,14 @@ nav {
         align-items: center;
     
     }
+
+    .widget-container-full {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
     .traffic {
         margin-right: 20px;
-        height: 50px
+        height: 20%;
     }
   
 
@@ -401,6 +417,13 @@ nav {
 
     .daily {
         border-right: 1px solid rgb(230, 230, 230);
+        border-top: 1px solid rgb(230, 230, 230);
+    }
+
+     /* ----> MOVILE USERS --->  */
+     
+    .mobile {
+        border-top: 1px solid rgb(230, 230, 230);
     }
 
     /* ---> SOCIAL --->  */

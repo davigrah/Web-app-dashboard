@@ -86,7 +86,7 @@ const dailyData = {
   };
 
     // data for mobile users bar chart
-  let dailyCanvas = new Chart(dailyCanvas, {
+  let dailyCanvastwo = new Chart(dailyCanvas, {
     type: 'bar',
     data: dailyData,
     options: dailyOptions
