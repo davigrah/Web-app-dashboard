@@ -8,6 +8,7 @@ const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 const box = document.getElementById("box");
+const boxItem = document.getElementById("box-item");
 var down = false;
 const bell = document.getElementsByClassName("bell");
 
@@ -37,7 +38,7 @@ to complete</p>
 <p class="alert-banner-close">x</p>
 </div>`
 
-// ---> EVENT LISTENER TO CLOSE DE ALERT BANNER ---> 
+// ---> EVENT LISTENER TO CLOSE THE ALERT BANNER ---> 
 
 alertBanner.addEventListener('click', e => {
     const element = e.target;
@@ -46,13 +47,14 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
-// notification.addEventListener('click', e => {
-//   const element = e.target;
-//   if (element.classList.contains("notifi-close")) {
-//   notification.style.display = "none"
-//   }
+// ---> EVENT LISTENER TO CLOSE THE NOTIFICATION BANNER ---> 
+boxItem.addEventListener('click', e => {
+  const element = e.target;
+  if (element.classList.contains("notifi-close")) {
+  boxItem.style.display = "none"
+  }
   
-// } );
+} );
 
 
 

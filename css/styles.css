@@ -57,19 +57,21 @@ header h1 {
 /* ---> notification --->  */
 
 .notifi-box {
-   width: 300px;
+   width: 270px;
    border-radius: 5%;
    height: 0;
    opacity: 0;
    position: absolute;
    right: 1px;
    top: 45px;
+   left: -105px;
    transition: 0.5s opacity, 250ms height;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    background-color: white;
    display: none;
    
 }
+
 .show {
     display: block;
 }
@@ -522,6 +524,13 @@ nav {
     .navigation svg {
         margin-top: 20px;
     }
+
+    /* ---> notification --->  */
+    .notifi-box {
+        right: 1px;
+        top: 45px;
+        left: -100px;
+     }
     /* ---> TRAFFIC --->  */
 
     .traffic-header {
