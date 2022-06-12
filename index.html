@@ -257,18 +257,34 @@
 
             <section class="settings">
                 <h3>Settings</h3>
-                <div class="settings-container">
-                    <!-- custom CSS toggle code-->
-                    <!-- custom CSS toggle code-->
-                    <select class="form-field" id="timezone">
-                        <option disabled selected>Select a Timezone</option>
-                        <option>Eastern</option>
-                    <!-- more options -->
-                    </select>
-                    <div class="settings-button" >
-                        <button class="button-primary" id="save">Save</button>
-                        <button class="button-disabled" id="cancel">Cancel</button>
-                    </div>
+                <div class="toggle">
+                    <div class="settings-align">
+                        <p>Send Email notifications</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="settings-align">
+                    <p>Set Profile to Public</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                </div>
+                    <div class="settings-container">
+                        <select class="form-field" id="timezone">
+                            <option disabled selected>Select a Timezone</option>
+                            <option>Eastern</option>
+                        <!-- more options -->
+                        </select>
+                        <div class="settings-button" >
+                            <button class="button-primary" id="save">Save</button>
+                            <button class="button-disabled" id="cancel">Cancel</button>
+                   
+                        </div>
+                        </div>
                 </div> 
             </section>
         </main>
