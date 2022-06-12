@@ -352,7 +352,8 @@ li {
   }
   
   .toggle p {
-      padding: 10px;
+      padding: 10px 0px 10px 0px;
+      margin-left: 18px;
   }
 
   /* Hide default HTML checkbox */
@@ -594,7 +595,16 @@ nav {
     }
    
 
-    
+    /* ---> settings --->  */
+
+    .settings-align {
+        justify-content: space-between;
+        align-content: center;
+    }
+    .switch {
+        margin-right: 380px;
+    }
+   
     
     .alert {
         grid-area: alert;
@@ -653,7 +663,10 @@ nav {
         
     }
    
-   
+   /* ----> settings --->  */
+   .switch {
+    margin-right: 100px;
+}
     .container {
         grid-template-columns: 70px 1fr;
         grid-template-areas:
