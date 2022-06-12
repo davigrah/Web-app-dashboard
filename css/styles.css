@@ -671,7 +671,12 @@ nav {
         width: 30%;
         
     }
-   
+   /* ---> members --->  */
+   .members {
+    border-right: 1px solid rgb(230, 230, 230);
+
+   }
+
    /* ----> settings --->  */
    .switch {
     margin-right: 100px;
