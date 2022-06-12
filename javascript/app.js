@@ -7,6 +7,27 @@ const mobileCanvas = document.getElementById("mobile-chart");
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
+const box = document.getElementById("box");
+var down = false;
+const bell = document.getElementsByClassName("bell");
+
+
+
+// ---> notification box ---> 
+
+function toggleNotifi(){
+  if (down) {
+    box.style.height = '0px';
+    box.style.opacity = 0;
+    box.classList.remove('show')
+    down = false;
+  } else {
+    box.style.height = 'fit-content';
+    box.style.opacity = 1;
+    box.classList.toggle("show");
+    down = true;
+  }
+}
 
 // ---> ALERT BANNER ---> 
 alertBanner.innerHTML = 
@@ -24,6 +45,16 @@ alertBanner.addEventListener('click', e => {
     alertBanner.style.display = "none"
     }
 });
+
+// notification.addEventListener('click', e => {
+//   const element = e.target;
+//   if (element.classList.contains("notifi-close")) {
+//   notification.style.display = "none"
+//   }
+  
+// } );
+
+
 
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",

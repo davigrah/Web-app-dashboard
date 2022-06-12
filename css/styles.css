@@ -54,6 +54,52 @@ header h1 {
     justify-content: space-between;
 }
 
+/* ---> notification --->  */
+
+.notifi-box {
+   width: 300px;
+   border-radius: 5%;
+   height: 0;
+   opacity: 0;
+   position: absolute;
+   right: 1px;
+   top: 45px;
+   transition: 0.5s opacity, 250ms height;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color: white;
+   display: none;
+   
+}
+.show {
+    display: block;
+}
+.notifi-item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 15px 5px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-content: center;
+
+} 
+.notifi-item:hover {
+    background-color: whitesmoke;
+}
+.notifi-item p {
+    font-size: 12px;
+    padding: 5px;
+
+}
+.notifi-close {
+    margin-right: 10px;
+    padding: 5px
+}
+.notifi-close:hover {
+    background-color: #7773ca;
+    color: white;
+}
+
 
 /* --->> NAV STYLES --->  */
 nav {
@@ -125,8 +171,6 @@ al
     background-color: white;
     height: fit-content;
     border-bottom: solid 1px rgb(230, 230, 230);
-
-
 }
 .traffic-header {
     min-width: 100%;
@@ -154,6 +198,9 @@ al
      border-radius: 15px;
      color: white;
      
+ }
+ .widget-container-full {
+     max-width: 100%;
  }
 
 li {
@@ -336,6 +383,7 @@ nav {
 }
 .traffic-chart {
     grid-area: traffic-chart;
+    width: 80%;
 }
 
 
@@ -406,6 +454,7 @@ nav {
     .widget-container-full {
         margin-left: 20px;
         margin-bottom: 20px;
+        width: 100%;
     }
     .traffic {
         margin-right: 20px;
