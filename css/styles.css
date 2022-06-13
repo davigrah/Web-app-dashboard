@@ -102,8 +102,15 @@
     padding: 5px;
   }
   .notify-close {
+    display: flex;
+    width: 35px;
+    height: 35px;
     margin-right: 10px;
     padding: 5px;
+    border-radius: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .notify-close:hover {
     background-color: #7773ca;
@@ -127,7 +134,7 @@
   
   nav svg:hover {
     transform: scale(1.1);
-    fill: green;
+    fill: limegreen;;
   }
   
   /* ---> MAIN HEADER ---> */
@@ -480,7 +487,7 @@
   }
   
   .bell:hover {
-    fill: green;
+    fill: limegreen;;
   }
   .container {
     height: 100%;
