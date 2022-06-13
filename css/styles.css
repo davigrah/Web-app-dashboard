@@ -170,7 +170,7 @@
   
   /* ---> TRAFIC -->  */
   
-  .traffic {
+  #traffic {
     background-color: white;
     height: fit-content;
     border-bottom: solid 1px rgb(230, 230, 230);
@@ -182,7 +182,7 @@
     max-width: 60px;
     margin-left: 18px;
   }
-  .traffic li {
+  #traffic li {
     display: grid;
     margin: 5px;
   }
@@ -210,24 +210,24 @@
   }
   /* ----> dayli traffic --->  */
   
-  .daily,
-  .mobile,
-  .social,
-  .members,
-  .activity,
-  .message,
-  .settings {
+  #daily,
+  #mobile,
+  #social,
+  #members,
+  #activity,
+  #message,
+  #settings {
     background-color: white;
     border-bottom: solid 1px rgb(230, 230, 230);
   }
   
-  .daily h3,
-  .mobile h3,
-  .social h3,
-  .members h3,
-  .activity h3,
-  .message h3,
-  .settings h3 {
+  #daily h3,
+  #mobile h3,
+  #social h3,
+  #members h3,
+  #activity h3,
+  #message h3,
+  #settings h3 {
     margin: 1em;
   }
   
@@ -246,7 +246,7 @@
     margin: 10px;
   }
   
-  .social p {
+  #social p {
     margin-left: 20px;
   }
   
@@ -259,7 +259,7 @@
     color: rgb(90, 90, 90);
   }
   
-  .social svg {
+  #social svg {
     min-width: 40px;
     fill: #7773ca;
   }
@@ -284,7 +284,7 @@
     text-align: center;
     margin: 0px 20px 0px 20px;
   }
-  .members a {
+  #members a {
     color: #7773ca;
     text-decoration: none;
   }
@@ -441,7 +441,7 @@
   .container {
     display: grid;
   }
-  .main-container {
+  #main-container {
     display: grid;
   }
   
@@ -453,7 +453,7 @@
     grid-area: navigation;
   }
   
-  .main-container {
+  #main-container {
     grid-area: main;
   }
   .traffic-chart {
@@ -531,21 +531,21 @@
       margin-bottom: 20px;
       width: 100%;
     }
-    .traffic {
+    #traffic {
       margin-right: 20px;
       height: 20%;
     }
   
     /* ----> DAILY TRAFFIC --->  */
   
-    .daily {
+   #daily  {
       border-right: 1px solid rgb(230, 230, 230);
       border-top: 1px solid rgb(230, 230, 230);
     }
   
     /* ----> MOVILE USERS --->  */
   
-    .mobile {
+    #mobile {
       border-top: 1px solid rgb(230, 230, 230);
     }
   
@@ -560,7 +560,7 @@
       width: 30%;
     }
   
-    .social h3 {
+    #social h3 {
       margin: 19px 19px 0px 19px;
     }
     /* ----> NEW MEMBERS AND ACTIVITY --->  */
@@ -579,7 +579,7 @@
       text-align: start;
       margin: 0px 20px 20px 15px;
     }
-    .members a {
+    #members a {
       color: #7773ca;
       text-decoration: none;
     }
@@ -597,19 +597,19 @@
     .alert {
       grid-area: alert;
     }
-    .social {
+    #social {
       grid-area: social;
     }
-    .members {
+    #members {
       grid-area: members;
     }
-    .activity {
+    #activity {
       grid-area: activity;
     }
-    .message {
+    #message {
       grid-area: message;
     }
-    .settings {
+    #settings {
       grid-area: settings;
     }
     .alert {
@@ -618,11 +618,11 @@
     .main-header {
       grid-area: main-header;
     }
-    .traffic {
+    #traffic {
       grid-area: traffic;
     }
   
-    .main-container {
+    #main-container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "main-header main-header"
@@ -648,7 +648,7 @@
       width: 30%;
     }
     /* ---> members --->  */
-    .members {
+    #members {
       border-right: 1px solid rgb(230, 230, 230);
     }
   
@@ -662,7 +662,7 @@
         "header header"
         "navigation main";
     }
-    .main-container {
+    #main-container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "main-header main-header"
