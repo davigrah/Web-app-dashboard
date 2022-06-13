@@ -54,8 +54,16 @@
   
   .bell-student {
     display: flex;
-    justify-content: space-between;
+    }
+
+  .greendot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: limegreen;
+      position: relative;
   }
+
   
   /* ---> notification --->  */
   
@@ -155,7 +163,7 @@
     flex-direction: row;
   }
   
-  al
+  
   
   /* The close button */
   .closebtn {
