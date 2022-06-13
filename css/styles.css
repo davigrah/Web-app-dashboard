@@ -4,78 +4,80 @@
     padding: 0;
     box-sizing: border-box;
   }
-
   
-
-/* --> BASIC STYLES  */
-
-/* ---> MAIN STYLES TO DEFINE GRID POSTION */
-header h1 {
+  /* --> BASIC STYLES  */
+  
+  /* ---> MAIN STYLES TO DEFINE GRID POSTION */
+  header h1 {
     color: white;
-}
-
-/* --->> HEADER STYLES ---> */
-header {
+  }
+  
+  /* --->> HEADER STYLES ---> */
+  header {
     display: flex;
     justify-content: space-between;
     padding: 1%;
     align-items: center;
     background-color: #7773ca;
     height: 60px;
-}
-.right-header{
+  }
+  .right-header {
     display: flex;
-    
-}
-.profile-photo {
+  }
+  .profile-photo {
     height: 35px;
     margin-left: 15px;
-}
-.student-name {
+  }
+  .student-name {
     color: white;
     text-align: center;
     padding-top: 10px;
     padding-left: 10px;
     font-size: 15px;
-}
-header h1 {
+  }
+  header h1 {
     font-size: 20px;
     padding-left: 5px;
-}
-.bell {
+  }
+  .bell {
     fill: white;
     display: flex;
-    width: 40px ;
-    border-right: 1px solid rgba(255, 255, 255, 0.652) ;
+    width: 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.652);
     padding-right: 10px;
-}
-.bell-student{
+    position: relative;
+  }
+  
+  .bell svg {
+    pointer-events: none;
+  }
+  
+  .bell-student {
     display: flex;
     justify-content: space-between;
-}
-
-/* ---> notification --->  */
-
-.notifi-box {
-   width: 270px;
-   border-radius: 5%;
-   height: 0;
-   opacity: 0;
-   position: absolute;
-   right: 1px;
-   top: 45px;
-   left: -105px;
-   transition: 0.5s opacity, 250ms height;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   background-color: white;
-   display: none;
-   
-}
-
-.show {
+  }
+  
+  /* ---> notification --->  */
+  
+  .notify-box {
+    width: 270px;
+    border-radius: 5%;
+    height: fit-content;
+    opacity: 1;
+    position: absolute;
+    right: 1px;
+    top: 45px;
+    left: -105px;
+    transition: 0.5s opacity, 250ms height;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    display: none;
+  }
+  
+  .show {
     display: block;
-}
-.notifi-item {
+  }
+  .notify-item {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgb(230, 230, 230);
@@ -83,28 +85,25 @@ header h1 {
     margin-bottom: 5px;
     justify-content: space-between;
     align-content: center;
-
-} 
-.notifi-item:hover {
+  }
+  .notify-item:hover {
     background-color: whitesmoke;
-}
-.notifi-item p {
+  }
+  .notify-item p {
     font-size: 12px;
     padding: 5px;
-
-}
-.notifi-close {
+  }
+  .notify-close {
     margin-right: 10px;
-    padding: 5px
-}
-.notifi-close:hover {
+    padding: 5px;
+  }
+  .notify-close:hover {
     background-color: #7773ca;
     color: white;
-}
-
-
-/* --->> NAV STYLES --->  */
-nav {
+  }
+  
+  /* --->> NAV STYLES --->  */
+  nav {
     background-color: #4c4c74;
     align-content: center;
     display: flex;
@@ -112,40 +111,37 @@ nav {
     justify-content: space-evenly;
     height: 50px;
     padding: 15px;
-}
-nav svg {
+  }
+  nav svg {
     fill: white;
     width: 30px;
-}
-
-nav svg:hover {
+  }
+  
+  nav svg:hover {
     transform: scale(1.1);
     fill: green;
-}
- 
-/* ---> MAIN HEADER ---> */
-.main-header {
+  }
+  
+  /* ---> MAIN HEADER ---> */
+  .main-header {
     background-color: whitesmoke;
     height: 60px;
-}
-.headline {
-  display: block;
-  max-width: 130px;
-  font-size: 20px;
-  padding: 16px;
-  background-color: white;
-  
-}
-div.main-header {
+  }
+  .headline {
+    display: block;
+    max-width: 130px;
+    font-size: 20px;
+    padding: 16px;
+    background-color: white;
+  }
+  div.main-header {
     background-color: rgb(230, 230, 230);
     height: 55px;
-    
-}
-
-
-/* ---> ALERT ---> */
-/* The alert message box */
-.alert .alert-banner {
+  }
+  
+  /* ---> ALERT ---> */
+  /* The alert message box */
+  .alert .alert-banner {
     display: flex;
     padding: 8px;
     background-color: #7773ca;
@@ -157,12 +153,12 @@ div.main-header {
     justify-content: space-between;
     font-size: smaller;
     flex-direction: row;
-}
-
-al
-
-/* The close button */
-.closebtn {
+  }
+  
+  al
+  
+  /* The close button */
+  .closebtn {
     margin-left: 15px;
     color: white;
     font-weight: lighter;
@@ -170,78 +166,74 @@ al
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
-}
-
-/* ---> TRAFIC -->  */
-
-.traffic {
+  }
+  
+  /* ---> TRAFIC -->  */
+  
+  .traffic {
     background-color: white;
     height: fit-content;
     border-bottom: solid 1px rgb(230, 230, 230);
-}
-.traffic-header {
+  }
+  .traffic-header {
     min-width: 100%;
-}
-.traffic-header h3{
+  }
+  .traffic-header h3 {
     max-width: 60px;
     margin-left: 18px;
-}
- .traffic li {
-     display: grid;
-     margin: 5px;
- }
- .traffic-nav {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
- }
- .traffic-nav-link {
-     padding: 5px 10px;
-     
- }
- .traffic-nav-link.active {
-     background-color: rgb(93, 182, 93);
-     border-radius: 15px;
-     color: white;
-     
- }
- .widget-container-full {
-     max-width: 100%;
- }
-
-li {
+  }
+  .traffic li {
+    display: grid;
+    margin: 5px;
+  }
+  .traffic-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .traffic-nav-link {
+    padding: 5px 10px;
+  }
+  .traffic-nav-link.active {
+    background-color: rgb(93, 182, 93);
+    border-radius: 15px;
+    color: white;
+  }
+  .widget-container-full {
+    max-width: 100%;
+  }
+  
+  li {
     float: left;
     display: block;
     text-align: center;
-}
-/* ----> dayli traffic --->  */
-
-.daily,
-.mobile,
-.social,
-.members,
-.activity,
-.message,
-.settings  {
+  }
+  /* ----> dayli traffic --->  */
+  
+  .daily,
+  .mobile,
+  .social,
+  .members,
+  .activity,
+  .message,
+  .settings {
     background-color: white;
     border-bottom: solid 1px rgb(230, 230, 230);
-
-}
-
-.daily h3,
-.mobile h3,
-.social h3,
-.members h3,
-.activity h3,
-.message h3,
-.settings h3 {
+  }
+  
+  .daily h3,
+  .mobile h3,
+  .social h3,
+  .members h3,
+  .activity h3,
+  .message h3,
+  .settings h3 {
     margin: 1em;
-}
-
-/* ----> social stats --->  */
-
-.social-container {
+  }
+  
+  /* ----> social stats --->  */
+  
+  .social-container {
     align-content: center;
     display: flex;
     align-items: center;
@@ -251,80 +243,78 @@ li {
     background-color: rgb(242, 242, 242);
     border: solid 1px rgb(177, 173, 173);
     border-radius: 8px;
-    margin: 10px
-}
- 
-.social p {
+    margin: 10px;
+  }
+  
+  .social p {
     margin-left: 20px;
-}
-
-.social-p {
+  }
+  
+  .social-p {
     font-size: small;
     color: #7773ca;
-}
-.number-p {
+  }
+  .number-p {
     font-size: xx-large;
     color: rgb(90, 90, 90);
-}
-
-.social svg {
+  }
+  
+  .social svg {
     min-width: 40px;
     fill: #7773ca;
-
-}
-
-/* ----> NEW MEMBERS AND RECENT ACTIVITY ---->  */
-
-.members-image {
+  }
+  
+  /* ----> NEW MEMBERS AND RECENT ACTIVITY ---->  */
+  
+  .members-image {
     max-width: 80px;
-}
-.members-container,
-.activity-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: solid 1px rgb(230, 230, 230);
-  margin-top: 15px;
-}
-.date {
+  }
+  .members-container,
+  .activity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px rgb(230, 230, 230);
+    margin-top: 15px;
+  }
+  .date {
     margin-bottom: 20px;
-}
-.member-text {
+  }
+  .member-text {
     text-align: center;
     margin: 0px 20px 0px 20px;
-}
-.members a{
+  }
+  .members a {
     color: #7773ca;
     text-decoration: none;
-}
-
-/* ---> MESSAGE USER --->  */
-
-.widget-container {
+  }
+  
+  /* ---> MESSAGE USER --->  */
+  
+  .widget-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-}
-
-.form-field {
+  }
+  
+  .form-field {
     width: 90%;
     height: 45px;
     background-color: rgb(245, 242, 242);
     border: solid 1px rgb(158, 154, 154);
     border-radius: 5px;
-}
-
-.form-area {
+  }
+  
+  .form-area {
     width: 90%;
     height: 120px;
     background-color: rgb(245, 242, 242);
     border: solid 1px rgb(158, 154, 154);
     border-radius: 5px;
     margin-top: 15px;
-}
-
-#send {
+  }
+  
+  #send {
     width: 90%;
     height: 45px;
     background-color: #7773ca;
@@ -333,12 +323,12 @@ li {
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 20px;
-}
-
-/* ---> SETTINGS --->  */
-
-/* The switch - the box around the slider */
-.switch {
+  }
+  
+  /* ---> SETTINGS --->  */
+  
+  /* The switch - the box around the slider */
+  .switch {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -346,23 +336,23 @@ li {
     margin-bottom: 10px;
   }
   .toggle {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
   }
   .settings-align {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 0px 18px 10px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 18px 10px 18px;
   }
   
   .toggle p {
-      padding: 10px 0px 10px 0px;
-      margin-left: 18px;
+    padding: 10px 0px 10px 0px;
+    margin-left: 18px;
   }
-
+  
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
@@ -379,8 +369,8 @@ li {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   
   .slider:before {
@@ -391,16 +381,16 @@ li {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #2196f3;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #2196f3;
   }
   
   input:checked + .slider:before {
@@ -417,28 +407,27 @@ li {
   .slider.round:before {
     border-radius: 50%;
   }
-
-.settings-container {
+  
+  .settings-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-}
-.form-field {
+  }
+  .form-field {
     border: solid 1px rgb(158, 154, 154);
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 20px;
-}
-.button-primary {
+  }
+  .button-primary {
     padding: 15px 45px;
     margin-right: 5px;
     background-color: #7773ca;
     color: white;
     border-radius: 5px;
     border: 1px solid white;
-}
-.button-disabled {
+  }
+  .button-disabled {
     color: white;
     background-color: rgb(177, 175, 175);
     padding: 15px 45px;
@@ -446,51 +435,46 @@ li {
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid white;
-    
-}
-
-
-/* GRID POSITION */
-.container {
+  }
+  
+  /* GRID POSITION */
+  .container {
     display: grid;
-}
-.main-container {
+  }
+  .main-container {
     display: grid;
-}
-
-header {
+  }
+  
+  header {
     grid-area: header;
-}
-   
-nav {
+  }
+  
+  nav {
     grid-area: navigation;
-}
-   
-.main-container {
+  }
+  
+  .main-container {
     grid-area: main;
-}
-.traffic-chart {
+  }
+  .traffic-chart {
     grid-area: traffic-chart;
     width: 80%;
-}
-
-
-/* ---> RECISE ICONS E IMAGES  */
-
-.bell,
-.social-image {
+  }
+  
+  /* ---> RECISE ICONS E IMAGES  */
+  
+  .bell,
+  .social-image {
     max-width: 35px;
-    
-}
-.members-image {
+  }
+  .members-image {
     border-radius: 50%;
-}
-
-.bell:hover {
-    transform: scale(1.1);
+  }
+  
+  .bell:hover {
     fill: green;
-}
-.container {
+  }
+  .container {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -498,17 +482,15 @@ nav {
       "header"
       "navigation"
       "main";
-  
   }
-
+  
   /* ---> ADJUST CHARTS --->  */
   
   #mobile-chart,
   #traffic-chart,
   #daily-chart {
-      margin-bottom: 18px;
+    margin-bottom: 18px;
   }
-
   
   @media (min-width: 768px) {
     .container {
@@ -517,141 +499,132 @@ nav {
         "header header"
         "navigation main";
     }
-   /* ---> NAVIGATION --->  */
-
+    /* ---> NAVIGATION --->  */
+  
     .navigation {
-        flex-direction: column;
-        height: 100%;
-        padding: 0;
-        justify-content: start;
-    
+      flex-direction: column;
+      height: 100%;
+      padding: 0;
+      justify-content: start;
     }
     .navigation svg {
-        margin-top: 20px;
-    }
-
-    /* ---> notification --->  */
-    .notifi-box {
-        right: 1px;
-        top: 45px;
-        left: -100px;
-     }
-    /* ---> TRAFFIC --->  */
-
-    .traffic-header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-    
-    }
-
-    .widget-container-full {
-        margin-left: 20px;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    .traffic {
-        margin-right: 20px;
-        height: 20%;
+      margin-top: 20px;
     }
   
-
-    /* ----> DAILY TRAFFIC --->  */
-
-    .daily {
-        border-right: 1px solid rgb(230, 230, 230);
-        border-top: 1px solid rgb(230, 230, 230);
+    /* ---> notification --->  */
+    .notify-box {
+      right: 1px;
+      top: 45px;
+      left: -100px;
     }
-
-     /* ----> MOVILE USERS --->  */
-     
-    .mobile {
-        border-top: 1px solid rgb(230, 230, 230);
+    /* ---> TRAFFIC --->  */
+  
+    .traffic-header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
     }
-
-    /* ---> SOCIAL --->  */
-   
-
-    .social-container {
-        display: inline-flex;
-        padding: 4%;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 1%;
-        width: 30%;
-        
-    }
-
-    .social h3 {
-        margin: 19px 19px 0px 19px;
-    }
-    /* ----> NEW MEMBERS AND ACTIVITY --->  */
-
-    .members-container,
-    .activity-container {
-        flex-direction: row;
-        margin-left: 18px;
-        
-    }
-    .date {
-        margin-left: auto;
-        margin-right: 15px;
-    }
-
-    .member-text {
-        text-align: start;
-        margin: 0px 20px 20px 15px;
-    }
-    .members a{
-        color: #7773ca;
-        text-decoration: none;
-    }
-   
-
-    /* ---> settings --->  */
-
-    .settings-align {
-        justify-content: space-between;
-        align-content: center;
-    }
-    .switch {
-        margin-right: 380px;
-    }
-   
-    
-    .alert {
-        grid-area: alert;
-    }
-    .social {
-        grid-area: social;
-    }
-    .members {
-        grid-area: members;
-    }
-    .activity {
-        grid-area: activity;
-    }
-    .message {
-        grid-area: message;
-    }
-    .settings {
-        grid-area: settings;
-    }
-    .alert {
-        min-width: 1fr;
-    }
-    .main-header {
-        grid-area: main-header;
+  
+    .widget-container-full {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 100%;
     }
     .traffic {
-        grid-area: traffic;
+      margin-right: 20px;
+      height: 20%;
     }
-
-
+  
+    /* ----> DAILY TRAFFIC --->  */
+  
+    .daily {
+      border-right: 1px solid rgb(230, 230, 230);
+      border-top: 1px solid rgb(230, 230, 230);
+    }
+  
+    /* ----> MOVILE USERS --->  */
+  
+    .mobile {
+      border-top: 1px solid rgb(230, 230, 230);
+    }
+  
+    /* ---> SOCIAL --->  */
+  
+    .social-container {
+      display: inline-flex;
+      padding: 4%;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 1%;
+      width: 30%;
+    }
+  
+    .social h3 {
+      margin: 19px 19px 0px 19px;
+    }
+    /* ----> NEW MEMBERS AND ACTIVITY --->  */
+  
+    .members-container,
+    .activity-container {
+      flex-direction: row;
+      margin-left: 18px;
+    }
+    .date {
+      margin-left: auto;
+      margin-right: 15px;
+    }
+  
+    .member-text {
+      text-align: start;
+      margin: 0px 20px 20px 15px;
+    }
+    .members a {
+      color: #7773ca;
+      text-decoration: none;
+    }
+  
+    /* ---> settings --->  */
+  
+    .settings-align {
+      justify-content: space-between;
+      align-content: center;
+    }
+    .switch {
+      margin-right: 380px;
+    }
+  
+    .alert {
+      grid-area: alert;
+    }
+    .social {
+      grid-area: social;
+    }
+    .members {
+      grid-area: members;
+    }
+    .activity {
+      grid-area: activity;
+    }
+    .message {
+      grid-area: message;
+    }
+    .settings {
+      grid-area: settings;
+    }
+    .alert {
+      min-width: 1fr;
+    }
+    .main-header {
+      grid-area: main-header;
+    }
+    .traffic {
+      grid-area: traffic;
+    }
+  
     .main-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
         "main-header main-header"
         "alert alert"
         "traffic traffic"
@@ -662,40 +635,36 @@ nav {
         "message message"
         "settings settings";
     }
- }
-
- @media (min-width: 1024px) {
-   
+  }
+  
+  @media (min-width: 1024px) {
     /* ---> SOCIAL ---> */
     .social-container {
-        display: inline-flex;
-        padding: 4%;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 1%;
-        width: 30%;
-        
+      display: inline-flex;
+      padding: 4%;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 1%;
+      width: 30%;
     }
-   /* ---> members --->  */
-   .members {
-    border-right: 1px solid rgb(230, 230, 230);
-
-   }
-
-   /* ----> settings --->  */
-   .switch {
-    margin-right: 100px;
-}
+    /* ---> members --->  */
+    .members {
+      border-right: 1px solid rgb(230, 230, 230);
+    }
+  
+    /* ----> settings --->  */
+    .switch {
+      margin-right: 100px;
+    }
     .container {
-        grid-template-columns: 70px 1fr;
-        grid-template-areas:
-          "header header"
-          "navigation main"
-          ;
-      }
-      .main-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
+      grid-template-columns: 70px 1fr;
+      grid-template-areas:
+        "header header"
+        "navigation main";
+    }
+    .main-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
         "main-header main-header"
         "alert alert"
         "traffic traffic"
@@ -704,9 +673,5 @@ nav {
         "members activity"
         "message settings";
     }
- }
-
-
-
-
- 
+  }
+  
