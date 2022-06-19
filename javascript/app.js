@@ -9,16 +9,26 @@ const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 const box = document.getElementById("box");
 const boxItem = document.querySelectorAll(".notify-close");
-var down = false;
 const bell = document.getElementsByClassName("bell")[0];
+const greendot = document.getElementById("greendot");
+const trafficNav = document.getElementById("traffic-nav");
+const hourBtn = document.getElementById("hour-btn");
+const dailyBtn = document.getElementById("daily-btn");
+const weeklyBtn = document.getElementById("weekly-btn");
+const monthlyBtn = document.getElementById("monthly-btn");
+
 
 // ---> notification box --->
 
 document.querySelector(".bell").addEventListener("click", (e) => {
   if (e.target === bell) {
     box.classList.toggle("show");
+    greendot.classList.toggle("displaynone");
   }
 });
+
+
+
 
 // ---> ALERT BANNER --->
 alertBanner.innerHTML = ` <div class="alert-banner">
@@ -43,6 +53,39 @@ boxItem.forEach((item) => {
     button.closest(".notify-item").remove();
   });
 });
+
+// ---> EVENT LISTENER TO TRAFFIC NAV ---> 
+
+hourBtn.addEventListener("click", (e) => {
+  hourBtn.className = "active"
+  dailyBtn.className = '';
+  weeklyBtn.className = '';
+  monthlyBtn.className = '';
+});
+
+dailyBtn.addEventListener("click", (e) => {
+  hourBtn.className = ""
+  dailyBtn.className = 'active';
+  weeklyBtn.className = '';
+  monthlyBtn.className = '';
+});
+
+weeklyBtn.addEventListener("click", (e) => {
+  hourBtn.className = ""
+  dailyBtn.className = '';
+  weeklyBtn.className = 'active';
+  monthlyBtn.className = '';
+});
+
+monthlyBtn.addEventListener("click", (e) => {
+  hourBtn.className = ""
+  dailyBtn.className = '';
+  weeklyBtn.className = '';
+  monthlyBtn.className = 'active';
+});
+
+
+// ---> CHARTS ---> 
 
 let trafficData = {
   labels: [
@@ -170,3 +213,5 @@ send.addEventListener("click", () => {
     alert(`Message successfully sent to: ${user.value}`);
   }
 });
+
+
