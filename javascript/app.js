@@ -22,6 +22,7 @@ const monthlyBtn = document.getElementById("monthly-btn");
 
 
 
+
 // ---> notification box --->
 
 document.querySelector(".bell").addEventListener("click", (e) => {
@@ -313,4 +314,38 @@ function removeElements() {
   });
 }
 
+/* ========================================= */
+/*             Settings/Local Storage        */
+/* ==========================================*/
 
+const saveBtn = document.querySelector("#save");
+const cancelBtn = document.querySelector("#cancel");
+const settingsCheckboxEmail = document.getElementById("settingsCheckboxEmail");
+const settingsCheckboxProfile = document.getElementById("settingsCheckboxProfile");
+const Timezones = document.getElementById("timezone");
+
+saveBtn.onclick = function () {
+  const emailOnOff = document.getElementById("settingsCheckboxEmail").checked;
+  const profileOnOff = document.getElementById("settingsCheckboxProfile").checked;
+  const timezone = document.getElementById("timezone").value;
+  localStorage.setItem("Send Email Notifications?", emailOnOff);
+  localStorage.setItem("Set Profile to Public?", profileOnOff);
+  localStorage.setItem("Timezone", timezone);
+};
+
+cancelBtn.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+});
+
+if (localStorage.getItem("Send Email Notifications?") === "true") {
+  settingsCheckboxEmail.checked = true;
+}
+if (localStorage.getItem("Set Profile to Public?") === "true") {
+  settingsCheckboxProfile.checked = true;
+}
+if (localStorage.getItem("Timezone")) {
+  Timezones.value = localStorage.getItem("Timezone");
+} else {
+  Timezones.selectedIndex = 0;
+}
