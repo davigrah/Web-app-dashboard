@@ -27,9 +27,6 @@ document.querySelector(".bell").addEventListener("click", (e) => {
   }
 });
 
-
-
-
 // ---> ALERT BANNER --->
 alertBanner.innerHTML = ` <div class="alert-banner">
 <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
@@ -54,19 +51,29 @@ boxItem.forEach((item) => {
   });
 });
 
-// ---> FUNCTION TO UPDATE CHARTS --->
 
-
-
-
-// ---> EVENT LISTENER TO TRAFFIC NAV ---> 
+// ---> EVENT LISTENER TO UPDATE TRAFFIC NAV AND CHART ---> 
 
 hourBtn.addEventListener("click", (e) => {
   hourBtn.className = "active"
   dailyBtn.className = '';
   weeklyBtn.className = '';
   monthlyBtn.className = '';
-
+ 
+  trafficChart.data.datasets[0].data = [100, 200, 90, 120, 340, 220, 180, 380, 450, 400, 100];
+  trafficChart.data.labels = 
+  ["10am",
+  "11am",
+  "12pm",
+  "1pm",
+  "2pm",
+  "3pm",
+  "4pm",
+  "5pm",
+  "6pm",
+  "7pm",
+  "8pm",]
+  trafficChart.update();
  
 });
 
@@ -76,6 +83,17 @@ dailyBtn.addEventListener("click", (e) => {
   dailyBtn.className = 'active';
   weeklyBtn.className = '';
   monthlyBtn.className = '';
+
+  trafficChart.data.datasets[0].data = [500, 300, 150, 450, 380, 120, 550];
+  trafficChart.data.labels = 
+  ["Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"]
+  trafficChart.update();
 });
 
 weeklyBtn.addEventListener("click", (e) => {
@@ -83,6 +101,17 @@ weeklyBtn.addEventListener("click", (e) => {
   dailyBtn.className = '';
   weeklyBtn.className = 'active';
   monthlyBtn.className = '';
+
+  trafficChart.data.datasets[0].data = [1200, 980, 1300, 1400, 720, 880, 1450];
+  trafficChart.data.labels = 
+  ["16-22",
+  "23-29",
+  "30-5",
+  "6-12",
+  "13-19",
+  "20-26",
+  "27-3"]
+  trafficChart.update();
 });
 
 monthlyBtn.addEventListener("click", (e) => {
@@ -90,6 +119,22 @@ monthlyBtn.addEventListener("click", (e) => {
   dailyBtn.className = '';
   weeklyBtn.className = '';
   monthlyBtn.className = 'active';
+
+  trafficChart.data.datasets[0].data = [3000, 2000, 3500, 5000, 7000, 9000, 7500, 7000, 6000, 3000, 1500, 2500];
+  trafficChart.data.labels = 
+  ["Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",]
+  trafficChart.update();
 });
 
 
