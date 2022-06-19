@@ -341,6 +341,9 @@
     border: solid 1px rgb(158, 154, 154);
     border-radius: 5px;
   }
+  #timezone {
+    margin-bottom: 15px;
+  }
   
   .form-area {
     width: 90%;
