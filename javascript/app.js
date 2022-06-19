@@ -54,6 +54,11 @@ boxItem.forEach((item) => {
   });
 });
 
+// ---> FUNCTION TO UPDATE CHARTS --->
+
+
+
+
 // ---> EVENT LISTENER TO TRAFFIC NAV ---> 
 
 hourBtn.addEventListener("click", (e) => {
@@ -61,7 +66,10 @@ hourBtn.addEventListener("click", (e) => {
   dailyBtn.className = '';
   weeklyBtn.className = '';
   monthlyBtn.className = '';
+
+ 
 });
+
 
 dailyBtn.addEventListener("click", (e) => {
   hourBtn.className = ""

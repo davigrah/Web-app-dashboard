@@ -221,6 +221,14 @@
   #monthly-btn {
     padding: 5px 10px;
   }
+  #hour-btn:hover,
+  #daily-btn:hover,
+  #weekly-btn:hover,
+  #monthly-btn:hover {
+    background-color: rgb(93, 182, 93);
+    border-radius: 15px;
+    color: white;
+  }
   .active {
     background-color: rgb(93, 182, 93);
     border-radius: 15px;
