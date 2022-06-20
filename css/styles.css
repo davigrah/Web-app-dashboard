@@ -601,6 +601,8 @@
    #daily  {
       border-right: 1px solid rgb(230, 230, 230);
       border-top: 1px solid rgb(230, 230, 230);
+      margin-left: 20px;
+      margin-right: 20px;
     }
   
     /* ----> MOVILE USERS --->  */
@@ -651,6 +653,19 @@
       justify-content: space-between;
       align-content: center;
     }
+
+    .form-field,
+    .form-area,
+    #send {
+      width: 93%;
+    }
+    .button-primary,
+    .button-disabled {
+      padding: 15px 140px;
+    }
+
+    /* ---> grid positioning ---> */
+    
     .switch {
       margin-right: 380px;
     }
@@ -696,6 +711,8 @@
         "message message"
         "settings settings";
     }
+
+    
   }
   
   @media (min-width: 1024px) {
@@ -717,13 +734,25 @@
     .switch {
       margin-right: 100px;
     }
-    .container {
-      grid-template-columns: 70px 1fr;
-      grid-template-areas:
-        "header header"
-        "navigation main";
+   
+    .settings-container {
+margin-top: 25px;
     }
-    #main-container {
+    .button-primary,
+    .button-disabled {
+      padding: 15px 90px;
+      margin-bottom: 0px;
+    }
+
+      /* ---> grid positioning ---> */
+   
+      .container {
+        grid-template-columns: 70px 1fr;
+        grid-template-areas:
+          "header header"
+          "navigation main";
+      }
+      #main-container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "main-header main-header"
