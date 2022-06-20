@@ -107,15 +107,21 @@ weeklyBtn.addEventListener("click", (e) => {
   weeklyBtn.className = 'active';
   monthlyBtn.className = '';
 
-  trafficChart.data.datasets[0].data = [1200, 980, 1300, 1400, 720, 880, 1450];
+  trafficChart.data.datasets[0].data = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500]
   trafficChart.data.labels = 
-  ["16-22",
-  "23-29",
-  "30-5",
-  "6-12",
-  "13-19",
-  "20-26",
-  "27-3"]
+  [
+    "16-22",
+    "23-29",
+    "30-5",
+    "6-12",
+    "13-19",
+    "20-26",
+    "27-3",
+    "4-10",
+    "11-17",
+    "18-24",
+    "25-31",
+  ]
   trafficChart.update();
 });
 
@@ -144,6 +150,7 @@ monthlyBtn.addEventListener("click", (e) => {
 
 
 // ---> CHARTS ---> 
+weeklyBtn.style.className = 'active';
 
 let trafficData = {
   labels: [
