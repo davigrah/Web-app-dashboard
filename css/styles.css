@@ -484,15 +484,23 @@
     color: white;
     border-radius: 5px;
     border: 1px solid white;
+    
   }
   .button-disabled {
     color: white;
     background-color: rgb(177, 175, 175);
     padding: 15px 45px;
     margin-left: 5px;
-    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid white;
+  }
+
+  .settings-button {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    max-width: 50%;
   }
   
   /* GRID POSITION */
@@ -659,12 +667,20 @@
     #send {
       width: 93%;
     }
-    .button-primary,
-    .button-disabled {
-      padding: 15px 140px;
+    
+    .settings-button {
+      
+      align-content: center;
+      align-items: center;
     }
 
-    /* ---> grid positioning ---> */
+  #save,
+  #cancel {
+    display: flex;
+    flex-direction: row;
+    min-width: 80%
+  }
+   /* --> grid positioning ---> */
     
     .switch {
       margin-right: 380px;
@@ -736,11 +752,11 @@
     }
    
     .settings-container {
-margin-top: 25px;
+     margin-top: 2;
     }
     .button-primary,
     .button-disabled {
-      padding: 15px 90px;
+      padding: 15px 25%;
       margin-bottom: 0px;
     }
 
