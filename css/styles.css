@@ -427,8 +427,8 @@
     border-bottom: solid 1px rgb(230, 230, 230);
     margin-top: 15px;
   }
-  .date {
-    margin-bottom: 20px;
+  .activity-btn {
+    visibility: hidden;
   }
   .member-text {
     text-align: center;
@@ -751,7 +751,8 @@
       flex-direction: row;
       margin-left: 18px;
     }
-    .date {
+    .activity-btn {
+      visibility: visible;
       margin-left: auto;
       margin-right: 15px;
     }
