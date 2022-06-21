@@ -28,6 +28,7 @@
   }
   .right-header {
     display: flex;
+    border-left: solid 1px white;
   }
   .profile-photo {
     height: 35px;
@@ -44,16 +45,13 @@
     font-size: 20px;
     padding-left: 5px;
   }
-  /* .bell {
-    fill: white;
-    display: flex;
-    width: 40px;
-    border-right: 1px solid rgba(255, 255, 255, 0.652);
+  .bell {
     padding-right: 10px;
     position: relative;
-  } */
+    margin-right: 10px;
+  }
   
-  .bell{
+  .bell svg{
     fill: white;
     display: flex;
     width: 40px;
