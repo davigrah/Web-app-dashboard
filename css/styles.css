@@ -297,8 +297,23 @@
   }
   
   #social svg {
-    min-width: 40px;
+    width: 40px;
+    height: 40px;
     fill: #7773ca;
+  }
+.social-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7773ca;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: visible;
+}
+  #social svg {
+    fill: white;
+
   }
   
   /* ----> NEW MEMBERS AND RECENT ACTIVITY ---->  */
@@ -529,8 +544,7 @@
   
   /* ---> RECISE ICONS E IMAGES  */
   
-  .bell,
-  .social-image {
+  .bell {
     max-width: 35px;
   }
   
@@ -622,9 +636,7 @@
     /* ---> SOCIAL --->  */
   
     .social-container {
-      height: f;
       display: inline-flex;
-      padding: 4%;
       align-items: center;
       justify-content: space-evenly;
       margin: 1%;
@@ -739,7 +751,6 @@
     /* ---> SOCIAL ---> */
     .social-container {
       display: inline-flex;
-      padding: 4%;
       align-items: center;
       justify-content: space-evenly;
       margin: 1%;
