@@ -498,9 +498,9 @@
   .settings-button {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-content: center;
     align-items: center;
-    max-width: 50%;
   }
   
   /* GRID POSITION */
@@ -676,9 +676,13 @@
 
   #save,
   #cancel {
-    display: flex;
     flex-direction: row;
-    min-width: 80%
+    flex-grow: 1;
+    margin: 0px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+   
+    
   }
    /* --> grid positioning ---> */
     
@@ -756,8 +760,10 @@
     }
     .button-primary,
     .button-disabled {
-      padding: 15px 25%;
-      margin-bottom: 0px;
+      padding: 15px 95px;
+    }
+    .settings-button {
+      margin-top: 25px;
     }
 
       /* ---> grid positioning ---> */
